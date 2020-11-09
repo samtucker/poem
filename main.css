@@ -1,3 +1,43 @@
-#poem li {
-    list-style-type: none;
+body {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: #22475C;
 }
+
+h1, p, li {
+    margin-top: 1px;
+    text-align: center;
+    color: #D3D8AA;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+button {
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#poem {
+    padding: 0;
+}
+
+#poem li {
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+    padding: 1px;
+}
+

@@ -16,3 +16,21 @@ function write() {
     poem.appendChild(line);
 
 }
+
+
+
+
+function getWords(callback) {
+    var httpRequest = new XMLHttpRequest();
+    const url='http://api.datamuse.com/words?ml=pig';
+    httpRequest.onload = function(){ // when the request is loaded
+       callback(httpRequest.responseText);// we're calling our method
+    };
+    httpRequest.open('GET', url);
+    httpRequest.send();
+}
+
+
+getWords(function(result) {
+    console.log(result)
+});
